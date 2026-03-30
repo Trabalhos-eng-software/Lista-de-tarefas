@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-clipboard-check"></i>
+                <h1>Gerenciador de Tarefas</h1>
+            </div>
+            <p>Organize suas atividades e aumente sua produtividade</p>
+            
+            <div class="header-buttons">
+                <button class="btn-outline"><i class="fas fa-bell"></i> Notificações</button>
+                <button class="btn-outline"><i class="fas fa-file-pdf"></i> Exportar PDF</button>
+            </div>
+        </header>
+
+        <section class="card task-form">
+            <h2>Nova Tarefa</h2>
+            <div class="input-group">
+                <label>Título *</label>
+                <input type="text" placeholder="Digite o título da tarefa">
+            </div>
+            <div class="input-group">
+                <label>Descrição</label>
+                <textarea placeholder="Digite uma descrição (opcional)"></textarea>
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <label>Data de Entrega</label>
+                    <input type="date">
+                </div>
+                <div class="input-group">
+                    <label>Prioridade</label>
+                    <select>
+                        <option>Média</option>
+                        <option>Baixa</option>
+                        <option>Alta</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn-primary"><i class="fas fa-plus"></i> Adicionar Tarefa</button>
+        </section>
+
+        <section class="card filters">
+            <div class="filter-header">
+                <i class="fas fa-filter"></i>
+                <span>Filtrar Tarefas</span>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active">Todas <span>0</span></button>
+                <button class="filter-btn">Pendentes <span>0</span></button>
+                <button class="filter-btn">Concluídas <span>0</span></button>
+            </div>
+        </section>
+
+        <section class="card empty-state">
+            <div class="empty-icon">
+                <i class="fas fa-layer-group"></i>
+            </div>
+            <h3>Nenhuma tarefa encontrada</h3>
+            <p>Adicione uma nova tarefa para começar a organizar suas atividades</p>
+        </section>
+    </div>
+
+</body>
+</html>
